@@ -17,7 +17,7 @@ const Filter = () => {
           <h1 className="px-3">Status</h1>
           <div className="flex gap-2 px-2">
             {status.map((ele, index) => {
-              return <ButtonFilter ele={ele} index={index} />
+              return <ButtonFilter key={index} ele={ele} index={index} />
             })}
           </div>
         </div>
@@ -26,7 +26,7 @@ const Filter = () => {
           <h1 className="px-3">Species</h1>
           <div className="flex gap-2 px-2">
             {species.map((ele, index) => {
-              return <ButtonFilter ele={ele} index={index} />
+              return <ButtonFilter key={index} ele={ele} index={index} />
             })}
           </div>
         </div>
@@ -35,7 +35,7 @@ const Filter = () => {
           <h1 className="px-3">Gender</h1>
           <div className="flex gap-2 px-2">
             {gender.map((ele, index) => {
-              return <ButtonFilter ele={ele} index={index} />
+              return <ButtonFilter key={index} ele={ele} index={index} />
             })}
           </div>
         </div>
