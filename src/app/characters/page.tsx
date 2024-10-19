@@ -1,5 +1,5 @@
-import AllChracters from "@/components/AllChracters"
-import React from "react"
+import AllChracters from '@/components/AllChracters'
+import React from 'react'
 
 const Characters = async () => {
   return (

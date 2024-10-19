@@ -1,5 +1,5 @@
-import { getOneCharacters } from "@/app/Services/getData.service"
-import OneCharacter from "@/components/OneCharacter"
+import { getOneCharacters } from '@/app/Services/getData.service'
+import OneCharacter from '@/components/OneCharacter'
 
 interface ParamsProps {
   params: Record<string, string>
@@ -8,7 +8,7 @@ interface ParamsProps {
 const Character = async ({ params }: ParamsProps) => {
   const character = await getOneCharacters(params.id)
   return (
-    <section className="flex justify-center">
+    <section className='flex justify-center'>
       <OneCharacter character={character} />
     </section>
   )
